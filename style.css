@@ -67,18 +67,19 @@ body {
     font-weight: 700;
 }
 
-.container__imagem {
+/* .container__imagem {
     margin: 1em 0 2em 0;
-}
+} */
 
 .container__caixa {
     margin: 0 6em;
 }
+
 .secundario__imagem {
     width: 80%;
 }
 
-.secundario{
+.secundario {
     align-items: center;
     margin: 0 10em;
 }
@@ -90,7 +91,7 @@ body {
     margin-bottom: 0.1em;
 }
 
-.descricao__texto{
+.descricao__texto {
     color: var(--cinza-secundario);
 }
 
@@ -103,62 +104,94 @@ body {
     padding: 2em;
 }
 
-.dispositivos{
+.dispositivos {
     text-align: center;
 }
 
-.dispositivos__lista{
+.dispositivos__lista {
     display: flex;
     justify-content: center;
     list-style: none;
     margin: 5em 0;
 }
 
-.dispositivos__titulo{
+.dispositivos__titulo {
     font-size: var(--font-tamanho-principal);
     color: var(--branco-principal);
 }
 
-.lista_item{
+.lista_item {
     font-size: 2rem;
     color: var(--branco-principal);
 }
 
-.rodape{
+.rodape {
     text-align: center;
     margin: 5.3em 7em;
 }
 
-.rodape__lista{
-     display: flex;
-     justify-content: center;
-     margin-top: 1.5em;
-     gap: 16px;
-     list-style: none;
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+    gap: 16px;
+    list-style: none;
 }
 
-.lista__link a{
+.lista__link a {
     color: var(--branco-principal);
     font-weight: 400;
     font-size: 1rem;
     text-decoration: none;
 }
 
-.lista__link a:hover{
+.lista__link a:hover {
     color: var(--botao-azul);
 }
 
-.lista__link a:active{
+.lista__link a:active {
     color: purple;
 }
 
-.rodape__texto{
+.rodape__texto {
     font-size: 0.8rem;
     color: var(--cinza-secundario);
     margin: 1.5em 0;
 }
 
-.container__botao:hover{
+.container__botao:hover {
     background-color: var(--botao-azul-efeito);
     color: var(--cor-de-fundo);
+}
+
+@media (max-width: 1100px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 10em 0;
+    }
+
+
+    .container__telas {
+        flex-direction: column-reverse;
+    }
+
+    .secundario__imagem {
+        width: 60%;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+    }
+
+    .dispositivos__titulo {
+        font-size: 2.5rem;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+    }
+
+
 }
